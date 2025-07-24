@@ -5,8 +5,7 @@ import time
 MAGIC_PREFIXES = ['£', '¢', '€', '¥', '^', '°', '=', '{', '}', '%', '©', '®', '™', '✓']
 pattern = re.compile(r"[" + re.escape(''.join(MAGIC_PREFIXES)) + r"]([^\x00\r\n]+)")
 
-# Read PID
-package = input("Enter the package name again (e.g., com.example.app): ").strip()
+package = "top.themeatly2.jewel"
 try:
     pid = subprocess.check_output(["adb", "shell", "pidof", package], text=True).strip()
 except subprocess.CalledProcessError:
