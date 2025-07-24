@@ -11,7 +11,7 @@ mkdir -p $HOME/debug-tools
 cd $HOME/debug-tools
 
 echo "⬇️ Downloading Python memory patch script..."
-wget -O mempatch.py https://example.com/mempatch.py  # Replace with actual URL
+wget -O mempatch.py https://raw.githubusercontent.com/biggiecheesetherat/jecode/refs/heads/main/jewel/mempatch.py
 
 echo "⬇️ Downloading Wireless Debugging setup script..."
 cat << 'EOF' > $INSTALL_DIR/wireless_debug_setup.sh
