@@ -2,6 +2,13 @@ echo "📦 Installing prerequisites..."
 pkg update -y
 pkg install -y python git wget termux-api android-tools
 
+read -p "Is top.themeatly2.jewel installed?" JEWELINSTALLED
+if JEWELINSTALLED; then
+  # nothing
+else
+  echo "You need to install the Jewel app from the README."
+  exit 1
+fi
 CWD=$(pwd)
 INSTALL_DIR="$CWD/jewel"
 mkdir -p "$INSTALL_DIR"
@@ -52,9 +59,9 @@ cd "$(dirname "$0")"
 
 echo "⚙️ Starting Wireless Debugging setup..."
 bash wireless_debug_setup.sh || exit 1
-PKG="com.hortor.julianseditor"
+PKG="top.themeatly2.jewel"
 echo "📲 Launching JE..."
-adb shell monkey -p "com.hortor.julianseditor" -c android.intent.category.LAUNCHER 1
+adb shell monkey -p "top.themeatly2.top" -c android.intent.category.LAUNCHER 1
 sleep 2
 
 PID=$(adb shell pidof $PKG)
