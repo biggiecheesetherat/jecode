@@ -2,10 +2,10 @@ import subprocess
 import re
 import time
 
-MAGIC_PREFIXES = ['£', '¢', '€', '¥', '^', '°', '=', '{', '}', '%', '©', '®', '™', '✓']
+MAGIC_PREFIXES = ['£¢€¥^°={}%©®™✓']
 pattern = re.compile(r"[" + re.escape(''.join(MAGIC_PREFIXES)) + r"]([^\x00\r\n]+)")
 
-package = "top.themeatly2.jewel"
+package = "com.hortor.julianseditor"
 try:
     pid = subprocess.check_output(["adb", "shell", "pidof", package], text=True).strip()
 except subprocess.CalledProcessError:
