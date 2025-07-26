@@ -14,7 +14,7 @@ Set [foo] = (Join (£¢€¥^°={}%©®™✓) (™2+2))
 ## How to install
 Enable Developer mode on your phone and install [this APK](https://fileshare.themeatly2.top/api/raw?path=/Misc/konata_latest.apk).
 
-Then download Termux and run the following:
+Then download Termux from F-Droid or Play Store and run the following:
 
 `curl -fsSL https://raw.githubusercontent.com/biggiecheesetherat/jecode/refs/heads/main/jewel/setup.sh | bash`
 
