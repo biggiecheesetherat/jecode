@@ -75,8 +75,8 @@ EOF
 
 chmod +x start_debug.sh
 
-echo "🔗 Adding start_je to your path incase you Ctrl+C the process setup runs."
-ln -sf $CWD/jewel/start_debug.sh $PREFIX/bin/start_je
-
+echo "🔗 Adding konata to your bashrc."
+alias konata="$CWD/jewel/start_debug.sh"
+echo "alias konata=\"$(pwd)/jewel/start_debug.sh\"" >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo "✅ Done!"
-echo "Setup is complete! Run start_je to open Julian's Editor."
+echo "Setup is complete! Run 'konata' or run ~/jewel/start_debug.sh to open Julian's Editor."
