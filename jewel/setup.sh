@@ -2,13 +2,7 @@ echo "📦 Installing prerequisites..."
 pkg update -y
 pkg install -y python git wget termux-api android-tools
 
-read -p "Is the Konata APK installed? Leave blank if no> " KONATAINSTALLED
-if KONATAINSTALLED; then
-  # nothing
-else
-  echo "You need to install Konata from the README."
-  exit 1
-fi
+read -p "Setup will assume you have installed Konata successfully from the README. Press enter to continue." KONATAINSTALLED
 CWD=$(pwd)
 INSTALL_DIR="$CWD/konata"
 mkdir -p "$INSTALL_DIR"
