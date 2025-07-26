@@ -2,17 +2,17 @@ echo "📦 Installing prerequisites..."
 pkg update -y
 pkg install -y python git wget termux-api android-tools
 
-read -p "Is top.themeatly2.jewel installed?" JEWELINSTALLED
-if JEWELINSTALLED; then
+read -p "Is the Konata APK installed? Leave blank if no> " KONATAINSTALLED
+if KONATAINSTALLED; then
   # nothing
 else
-  echo "You need to install the Jewel app from the README."
+  echo "You need to install Konata from the README."
   exit 1
 fi
 CWD=$(pwd)
-INSTALL_DIR="$CWD/jewel"
+INSTALL_DIR="$CWD/konata"
 mkdir -p "$INSTALL_DIR"
-cd jewel
+cd konata
 echo "📂 Creating debug tool directory..."
 mkdir -p $HOME/debug-tools
 cd $HOME/debug-tools
@@ -59,9 +59,9 @@ cd "$(dirname "$0")"
 
 echo "⚙️ Starting Wireless Debugging setup..."
 bash wireless_debug_setup.sh || exit 1
-PKG="top.themeatly2.jewel"
+PKG="com.hortor.julianseditor"
 echo "📲 Launching JE..."
-adb shell monkey -p "top.themeatly2.top" -c android.intent.category.LAUNCHER 1
+adb shell monkey -p "com.hortor.julianseditor" -c android.intent.category.LAUNCHER 1
 sleep 2
 
 PID=$(adb shell pidof $PKG)
