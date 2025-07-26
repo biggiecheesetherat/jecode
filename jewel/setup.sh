@@ -3,6 +3,7 @@ pkg update -y
 pkg install -y python git wget termux-api android-tools
 
 read -p "Setup will assume you have installed Konata successfully from the README. Press enter to continue." KONATAINSTALLED
+termux-setup-storage
 CWD=$(pwd)
 INSTALL_DIR="$CWD/konata"
 mkdir -p "$INSTALL_DIR"
