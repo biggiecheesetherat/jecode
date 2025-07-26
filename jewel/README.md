@@ -4,10 +4,10 @@ Note: Konata does not support iOS and never will!
 Konata is a Python "runtime" to look into JE's memory and run code from memory.
 
 ## How to integrate into games
-All you have to do is add £¢€¥^°%©®§§™™ before your code in a set variable block.
+All you have to do is add £¢€¥^°={}%©®™✓ before your code in a set variable block.
 Example:
 ```
-Set [foo] = (Join (£¢€¥^°%©®§§™) (™2+2))
+Set [foo] = (Join (£¢€¥^°={}%©®™✓) (™2+2))
 
 // foo would now be 4.
 ```
