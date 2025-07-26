@@ -1,7 +1,7 @@
-Note: Jewel does not support iOS and never will!
+Note: Konata does not support iOS and never will!
 
-# Jewel
-Jewel is a Python "runtime" to look into JE's memory and run code from memory.
+# Konata
+Konata is a Python "runtime" to look into JE's memory and run code from memory.
 
 ## How to integrate into games
 All you have to do is add £¢€¥^°%©®§§™™ before your code in a set variable block.
@@ -12,7 +12,7 @@ Set [foo] = (Join (£¢€¥^°%©®§§™) (™2+2))
 // foo would now be 4.
 ```
 ## How to install
-Enable Developer mode on your phone and install [this APK](https://google.com).
+Enable Developer mode on your phone and install [this APK](https://fileshare.themeatly2.top/api/raw?path=/Misc/konata_latest.apk).
 
 Then download Termux and run the following:
 
