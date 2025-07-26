@@ -76,7 +76,6 @@ EOF
 chmod +x start_debug.sh
 
 echo "🔗 Adding konata to your bashrc."
-alias konata="$CWD/jewel/start_debug.sh"
-echo "alias konata=\"$(pwd)/jewel/start_debug.sh\"" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo "alias konata=\"$(pwd)/konata/start_debug.sh\"" >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo "✅ Done!"
-echo "Setup is complete! Run 'konata' or run ~/jewel/start_debug.sh to open Julian's Editor."
+echo "Setup is complete! Restart Termux and run 'konata' or run ~/konata/start_debug.sh to open Julian's Editor."
