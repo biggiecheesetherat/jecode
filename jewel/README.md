@@ -3,6 +3,8 @@ Note: Konata does not support iOS and never will!
 # Konata
 Konata is a Python(soon to be Lua) "runtime" to look into JE's memory and run code from memory.
 
+Konata WILL require a rooted Android phone, as normal Android does not let apps modify the memory of others for very obvious security reasons..
+
 ## How to integrate into games
 All you have to do is add £¢€¥^°={}%©®™✓ before your code in a set variable block.
 Example:
